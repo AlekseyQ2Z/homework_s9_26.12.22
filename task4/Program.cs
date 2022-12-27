@@ -38,11 +38,9 @@ void PrintArray(int[,] arr)
     }
 }
 
-Console.WriteLine("Я могу спирально заполнить массив");
-Console.WriteLine("Напиши количество строк этого массива: ");
+Console.WriteLine("Я могу спирально заполнить квадратный массив");
+Console.WriteLine("Напиши количество строк/столбцов этого массива: ");
 int rowCount = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Напиши количество столбцов массива: ");
-int columnCount = Convert.ToInt32(Console.ReadLine());
-int[,] array = new int[rowCount, columnCount];
+int[,] array = new int[rowCount, rowCount];
 FillArraySpiral(array);
 PrintArray(array);
